@@ -14,8 +14,9 @@ from torchmetrics import ConfusionMatrix
 from mlxtend.plotting import plot_confusion_matrix
 
 """
-Tutorial from https://www.codegenes.net/blog/multivariate-lstm-pytorch/ 
-and https://www.codegenes.net/blog/lstm-for-multple-output-pytorch/
+Tutorial from https://www.codegenes.net/blog/multivariate-lstm-pytorch/,
+ https://www.codegenes.net/blog/lstm-for-multple-output-pytorch/,
+ and https://www.geeksforgeeks.org/data-analysis/time-series-forecasting-using-pytorch/
 
 Dataset from http://archive.ics.uci.edu/dataset/357/occupancy+detection
 
