@@ -936,7 +936,7 @@ print(f"\nFirst two prediction probabilities: {pred_probs[:2]}\n")
 
 """
 Now we can go from prediction probabilities to prediction labels by 
-    taking the torch.argmax() of the output of the torch.softmax() activation function.
+    taking the torch.argmax() of the output or the torch.softmax() activation function.
 """
 
 pred_classes = pred_probs.argmax(dim=1)
