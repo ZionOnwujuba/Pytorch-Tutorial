@@ -20,6 +20,8 @@ Tutorial from https://www.codegenes.net/blog/multivariate-lstm-pytorch/,
 
 Dataset from http://archive.ics.uci.edu/dataset/357/occupancy+detection
 
+Link for understanding LSTMs: https://www.datacamp.com/tutorial/lstm-models
+
 Multivariate LSTM is an extension of the basic LSTM architecture to 
     handle multiple input variables. In a univariate time-series, 
     we have only one variable changing over time. For example, 
