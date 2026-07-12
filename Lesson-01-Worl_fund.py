@@ -136,10 +136,18 @@ Calculate the loss: The model's outputs (predictions) are compared to the ground
 
 Zero gradients: The optimizers gradients are set to zero (they are accumulated by default) so they can be recalculated for
                 the specific training step.
+                    From mljourney: "A gradient tells us the direction and magnitude of the steepest increase in our loss function 
+                    with respect to each parameter. By moving in the opposite direction of the gradient—a process called gradient 
+                    descent—we can systematically reduce our loss and improve our network’s performance.
 
 
-Perform backpropagation on the loss: Computes the gradient of the loss with respect for every model parameter to be updated 
-                                    (each parameter with requires_grad=True). This is known as backpropagation, hence "backwards".
+Perform backpropagation on the loss: Computes the gradient of the loss (direction and magnitude which towards the spot of max loss or wrongness of the model) 
+                                    with respect for every model parameter to be updated (each parameter with requires_grad=True). This is known as backpropagation, hence "backwards".
+                                        From mljourney: "Here’s how backpropagation works in practice. During the forward pass, 
+                                        we feed input data through the network layer by layer, computing activations and storing 
+                                        intermediate values. When we reach the output, we calculate the loss. 
+                                        Then, during the backward pass, we start at the loss and work our way back through the network, 
+                                        computing gradients at each layer."
 
 Update the optimizer (gradient descent): Update the parameters with requires_grad=True with respect to the loss gradients in order 
                                         to improve them.
